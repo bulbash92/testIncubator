@@ -8,7 +8,7 @@ let arr = [
     {name: 'djonni',
     age: 15}
 ];
-
+// клики сразу с задержкой
 searchButton.addEventListener('click', (event)=> {
     for(i = 0; i<arr.length; i++) {
         setTimeout(() => alert(arr[i].name), 3000);
@@ -30,8 +30,8 @@ let superSum =  function(one, two)  {
 }
 console.log(superSum(1, 4))
 
+//поиск максимального и минимального числа массива
 let numbers = [5, 34, 55, 65, 2,202, 4, 11];
-
 let min = numbers[0];
 let max;
 function findMax(arr) {
