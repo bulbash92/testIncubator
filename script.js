@@ -10,17 +10,16 @@ let arr = [
 ];
 // клики сразу с задержкой
 searchButton.addEventListener('click', (event)=> {
+    
+    if(searchInput.value == 'google') {
+    setTimeout(()=> alert('Yandex круче.Но это не точно'), 3000);
+    } else  {
+    setTimeout(()=> alert(searchInput.value), 3000);
+    };
     for(i = 0; i<arr.length; i++) {
         setTimeout(() => alert(arr[i].name), 3000);
         if(i===0) break
     }
-    if (searchInput.value == '') {
-       setTimeout(() => alert('введите запрос'), 5000);
-    } else if(searchInput.value == 'google') {
-       setTimeout(()=> alert('Yandex круче.Но это не точно'), 3000);
-    } else  {
-       setTimeout(()=> alert(searchInput.value), 3000);}
-    
 })
 
 let superSum =  function(one, two)  {
